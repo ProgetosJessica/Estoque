@@ -5,7 +5,7 @@
 // Estoque
 typedef struct
 {
-        int Estoque[];
+        int Estoque[100];
         int PedidoEstoque[];
         int ItemPedidoEstoque[];
         int Filial;
@@ -35,9 +35,9 @@ typedef struct
 int main() {
 
     
-     Estoque estoque[];
+     Estoque estoque[100];
      PedidoEstoque PedidoEstoque[];
-     Filial filial[];
+     Filial Filial[];
      int i;
      
         do{
@@ -48,10 +48,8 @@ int main() {
                     scanf("%i",&estoque[i].PedidoEstoque);
                     printf("\n\n");
                     printf ("DIGITE A FILIAL");
-                    scanf ("%i", &filial[i].Filial);
-                    scanf (""%i",&filial[i].filial);");
-                
-                   printf("\n\n");
+                    scanf ("%i", &Filial[i].Id_filial);
+                     printf("\n\n");
      }while (estoque[i].Produto != 0);
        
      
